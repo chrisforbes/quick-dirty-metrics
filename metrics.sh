@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Simple code metrics extractor for C# (and similar languages)
-# usage: metrics PATTERN
-# example: metrics *.cs
+# usage: metrics.sh PATTERN
+# example: metrics.sh *.cs
 
 echo -n 'Total Lines: '
 find . -iname $1 | xargs cat | wc -l
